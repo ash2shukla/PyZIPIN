@@ -1,12 +1,13 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import StaticPool
 from .createDB import ZIP, Base
 from json import dumps
 from os import path
 
 DB_URI = 'sqlite:///'+path.join(path.dirname(path.abspath(__file__)), "ZIPInfo.db")
 
-engine = create_engine(DB_URI)
+engine = create_engine(DB_URI,connect_args={'check_same_thread':False},poolclass=StaticPool)
 Base.metadata.bind = engine
 DBSession = sessionmaker()
 DBSession.bind = engine
