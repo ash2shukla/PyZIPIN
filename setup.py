@@ -11,6 +11,7 @@ setup(
   download_url = 'https://github.com/ash2shukla/RailIN/archive/0.1.tar.gz',
   keywords = ['zipcodes','pincode','india','data.gov.in'], # arbitrary keywords
   classifiers = [],
+  include_package_data = True,
   install_requires=[
          'sqlalchemy'
           ]

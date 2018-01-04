@@ -1,6 +1,8 @@
+MANIFEST.in
 README.md
 setup.py
 PyZIPIN/ZIPDecode.py
+PyZIPIN/ZIPInfo.db
 PyZIPIN/__init__.py
 PyZIPIN/createDB.py
 PyZIPIN/populateDB.py
