@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: PyZIPIN
+Version: 0.1
+Summary: A python3 library providing information of ZIP codes of India based on data from data.gov.in(2018)
+Home-page: https://github.com/ash2shukla/PyZIPIN
+Author: Ashish Shukla
+Author-email: ash2shukla@gmail.com
+License: MIT
+Download-URL: https://github.com/ash2shukla/RailIN/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: zipcodes,pincode,india,data.gov.in
+Platform: UNKNOWN

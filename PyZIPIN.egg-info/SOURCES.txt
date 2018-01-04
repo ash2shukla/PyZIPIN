@@ -1,0 +1,11 @@
+README.md
+setup.py
+PyZIPIN/ZIPDecode.py
+PyZIPIN/__init__.py
+PyZIPIN/createDB.py
+PyZIPIN/populateDB.py
+PyZIPIN.egg-info/PKG-INFO
+PyZIPIN.egg-info/SOURCES.txt
+PyZIPIN.egg-info/dependency_links.txt
+PyZIPIN.egg-info/requires.txt
+PyZIPIN.egg-info/top_level.txt
