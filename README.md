@@ -1,4 +1,4 @@
-PyZIPIN : Python module for ZIP codes of India
+# PyZIPIN : Python module for ZIP codes of India #
 
 decode: Convert ZIP to Information(District, State etc.).
 encode: Convert District to ZIP.
