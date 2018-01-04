@@ -44,11 +44,11 @@ def decode(zip_code,all_results=False):
 		results = _session.query(ZIP).filter(ZIP.pincode == str(zip_code))
 		for i in results:
 			retval.append(i.as_dict())
-		return retval
+		return dumps(retval)
 	else:
 		res =  _session.query(ZIP).filter(ZIP.pincode == str(zip_code)).first()
 		if res is not None:
-			return res.as_dict()
+			return dumps(res.as_dict())
 		else:
 			return None
 
@@ -62,11 +62,11 @@ def encode(district, all_results=False):
 		for i in _session.query(ZIP).filter(ZIP.districtname==district):
 			i = i.as_dict()
 			retval.append({'pincode':i['pincode'],'officename':i['officename']})
-		return retval
+		return dumps(retval)
 	else:
 		res = _session.query(ZIP).filter(ZIP.districtname==district).first()
 		if res is not None:
 			res = res.as_dict()
-			return {'pincode':res['pincode'],'officename':res['officename']}
+			return dumps({'pincode':res['pincode'],'officename':res['officename']})
 		else:
 			return None
